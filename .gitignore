@@ -1,0 +1,61 @@
+# Git ignore rules for Mental Health ML Project
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Environment variables (never commit secrets)
+.env
+
+# Dataset files (may contain sensitive data)
+data/mental_health_survey.csv
+data/*.csv.bak
+data/raw/
+
+# Large model files (use model registry instead)
+models/*.pkl
+models/*.joblib
+
+# Generated reports and figures (reproducible from code)
+# Uncomment if you want to exclude generated outputs:
+# reports/figures/
+# reports/model_metrics.json
+# reports/model_comparison.csv
+
+# IDE settings
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Archive files (generated)
+*.zip
